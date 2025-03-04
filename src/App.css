@@ -1,0 +1,191 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.envelop-container {
+  width: 100%;
+  height: 20em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.envelop {
+  width: 30em;
+  height: 20em;
+  background-color: lightpink;
+  border-radius: 0.5em;
+  margin: 2em;
+  padding: 2em;
+  position: relative;
+}
+
+.slot {
+  position: absolute;
+  background-color: red;
+  width: 30em;
+  height: 20em;
+  /* clip-path: polygon(10% 100%, 50% 30%, 90% 100%); */
+  clip-path: inset(0% 45% 0% 45% round 10px);
+  border-radius: 3em;
+}
+
+.image-thumbnail {
+  aspect-ratio: 1/1;
+}
+
+.image-avatar {
+  border-radius: 50%;
+  background-color: red;
+  width: 10em;
+  box-shadow: pink 0px 5px 3em;
+  margin: 1em;
+
+  img {
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.about-con {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.con-img {
+  width: 100%;
+  &figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.invitation {
+  color: orange !important;
+  & h2,
+  h3,
+  h4 {
+    color: white !important;
+  }
+  & p {
+    font-size: larger;
+  }
+  & .subheading {
+    font-style: oblique;
+  }
+
+  & .address {
+    font-style: italic;
+  }
+}
+.gng-container{
+  position: absolute;
+  display: flex;
+  top: 55%;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.ganeshji {
+  position: absolute;
+  aspect-ratio: 1/1;
+  width: 15dvw;
+  &.left {
+    left: 20%;
+  }
+  &.right {
+    right: 20%;
+  }
+  & img {
+    filter: brightness(10);
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.ganeshji-mob{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & div{
+    width: 33dvw;
+
+    & img {
+      filter: brightness(10);
+      width: 100%;
+      height: 100%;
+    }
+  } 
+}
+
+.celebration-img {
+  height: 20em;
+  margin-bottom: 0em;
+
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+.font-oblique {
+  font-style: oblique;
+}
+
+.carosal {
+  height: 38em;
+  background-color: #61dafb;
+}
+
+.invititation{
+  z-index: 101;
+}

@@ -1,26 +1,17 @@
-import './App.css';
-import Welcome from './welcome/Welcome';
-import StepA from './stepA/StepA';
-import StepB from './stepB/StepB';
-import StepC from './stepC/StepC';
-import StepD from './stepD/StepD';
-import StepE from './stepE/StepE';
-import Headers from './header/Header';
-import Events from './events/Events';
-import Map from './map/Map';
+import "./App.css";
+import { BrowserRouter as Router,Route, Routes } from "react-router-dom";
+import General from "./views/GeneralPage.jsx"
+import Office from "./views/OfficePage.jsx";
 
 function App() {
   return (
     <div className="App">
-      {/* <Welcome/> */}
-      {/* <Headers/> */}
-      <StepA/>
-      <StepB/>
-      <Events/>
-      {/* <StepC/> */}
-      <StepD/>
-      <Map/>
-      <StepE/>
+      <Router>
+        <Routes>
+          <Route path="/" element={<General />} />
+          <Route path="/office" element={<Office />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

@@ -132,7 +132,7 @@
 .ganeshji {
   position: absolute;
   aspect-ratio: 1/1;
-  width: 15dvw;
+  width: 12dvw;
   &.left {
     left: 20%;
   }

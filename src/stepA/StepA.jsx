@@ -118,7 +118,7 @@ export default function StepA() {
               }}
             >
               <div className="invitation">
-                <h2 className="heading">Wedding Invitation</h2>
+                <h2 className="heading moon-dance-regular">Wedding Invitation</h2>
 
                 <p className="subheading mb-xs-0 mb-sm-0">We inviting you and your family on</p>
                 <div className="ganeshji-mob">
@@ -170,7 +170,7 @@ export default function StepA() {
               data={{
                 name: "Rahul",
                 avatartUrl: "assets/images/about/groom.jpeg",
-                des: "A man of integrity, strength, and unwavering devotion <br />—her steadfast protector, partner, and greatest support inevery journey of life.",
+                des: "A man of integrity, strength, and unwavering devotion \n—her steadfast protector, partner, and greatest support inevery journey of life.",
               }}
             />
           </div>
@@ -190,7 +190,7 @@ export default function StepA() {
               data={{
                 name: "Nisha",
                 avatartUrl: "assets/images/about/bride.jpeg",
-                des: " A woman of grace, resilience, and boundless love <br /> —his heart’s truest companion, guiding light, and the soul of their shared journey.",
+                des: " A woman of grace, resilience, and boundless love \n —his heart’s truest companion, guiding light, and the soul of their shared journey.",
               }}
             />
           </div>

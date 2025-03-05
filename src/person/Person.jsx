@@ -15,7 +15,7 @@ function Person({ data }) {
 
         {/* <p>( S/o Mrs. Prakash &amp; Mr. Shanti )</p> */}
 
-        <p>{data?.des}</p>
+        <p className="font-italic">{data?.des}</p>
       </div>
     </div>
   );

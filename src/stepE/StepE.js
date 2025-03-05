@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function StepE() {
   return (
-    <section class="banner-area section bg-img af">
+    <section class="banner-area section bg-img af" style={{backgroundImage:'none'}}>
 
             <div class="container">
 
@@ -12,7 +12,9 @@ export default function StepE() {
 
                         <div class="banner-con">
 
-                            <h2>We are going to...<span><img src="assets/images/banner/ico.png" alt=""/></span> Celebrate Our Love</h2>
+                            <h2>We are going to...<span>
+                                <img src="assets/images/banner/ico.png" alt=""/>
+                                </span> Celebrate Our Love</h2>
 
                         </div>
 

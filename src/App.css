@@ -189,3 +189,39 @@
 .invititation{
   z-index: 101;
 }
+
+.bx-1{
+  box-shadow:  inset 10px 10px 20px white,inset -10px -10px 20px white;
+  font-size: xx-large;
+}
+
+.logo{
+  & a{
+    text-decoration: none !important;
+  }
+}
+.heading-title{
+  text-decoration: none;
+  font-size: xxx-large;
+  font-family: "Great Vibes", cursive;
+  color: white;
+  font-weight: bolder;
+  /* font-style: italic; */
+  display: inline-flex;
+      gap: 0.5em;
+
+
+  & img{
+    max-width: 4em;
+    height: 1.5em;
+    vertical-align: text-top;
+  }
+}
+
+.counter-con{
+  text-shadow: 11px 9px 10px red;
+}
+
+.counter-container{
+  text-shadow: 1px 1px 10px orange, 1px 1px 10em green, 1px 1px 1em red;
+}

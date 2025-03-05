@@ -12,13 +12,17 @@ export default function Header() {
 
                         <div class="logo">
 
-                            <a href="index.html"><img src="assets/images/logo/logo.png" alt=""/></a>
+                            <a href="index.html">
+                                <div className='heading-title'> Rahul 
+                                    <img className="" src='./assets/images/logo/wd1.png' alt='weds' /> 
+                                    Nisha</div>
+                            </a>
 
                         </div>
 
                     </div>
 
-                    <div class="col-md-9 col-sm-9 hidden-xs">
+                    {/* <div class="col-md-9 col-sm-9 hidden-xs">
 
                         <div class="main-menus menu_scroll">
 
@@ -30,15 +34,9 @@ export default function Header() {
 
                                     <li class=""><a href="1">About Us</a></li>
 
-                                    <li class=""><a href="2">Love Story</a></li>
-
                                     <li class="active"><a href="3">Events</a></li>
 
-                                    <li class=""><a href="4">Family</a></li>
-
                                     <li class=""><a href="5">Gallery</a></li>
-
-                                    <li class=""><a href="6">Blog</a></li>
 
                                     <li class=""><a href="7">Contact Us</a></li>
 
@@ -48,14 +46,14 @@ export default function Header() {
 
                         </div>
 
-                    </div>
+                    </div> */}
 
                 </div>
 
             </div>
 
 
-            <div class="mobilemenu">
+            {/* <div class="mobilemenu">
 
                 <div class="mobile-menu menu_scroll visible-xs">
 
@@ -67,15 +65,9 @@ export default function Header() {
 
                             <li><a href="1">About Us</a></li>
 
-                            <li><a href="2">Love Story</a></li>
-
                             <li><a href="3">Events</a></li>
 
-                            <li><a href="4">Family</a></li>
-
                             <li><a href="5">Gallery</a></li>
-
-                            <li><a href="6">Blog</a></li>
 
                             <li><a href="7">Contact Us</a></li>
 
@@ -85,7 +77,7 @@ export default function Header() {
 
                 </div>
 
-            </div>
+            </div> */}
 
         </header>
   )

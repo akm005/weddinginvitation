@@ -1,11 +1,39 @@
-import React from "react";
+import React,{useEffect,useState} from "react";
 
 export default function StepB() {
+
+  const calculateTimeLeft = () => {
+    const now = new Date();
+    const endTime = new Date(2025, 3, 25, 19, 0, 0)
+    const difference = endTime - now;
+
+    let timeLeft = {};
+    if (difference > 0) {
+      timeLeft = {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / (1000 * 60)) % 60),
+        seconds: Math.floor((difference / 1000) % 60),
+      };
+    }
+    return timeLeft;
+  };
+
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000); 
+
+    return () => clearInterval(timer);
+  }, []);
   return (
     <section
       class="counter-area section bg-img jarallax"
       data-jarallax-original-styles="null"
       // style="z-index: 0; background-image: none; background-attachment: scroll; background-size: auto;"
+      style={{zIndex:0,backgroundAttachment:'scroll',backgroundSize:'auto'}}
     >
       <div class="container">
         <div class="row">
@@ -21,24 +49,24 @@ export default function StepB() {
 
           <div class="col-md-6 col-sm-12">
             <div class="counter">
-              <ul>
+              <ul className="counter-container p-0 position-relative f-flex justify-content-around">
                 <li>
-                  <span class="days">19</span>
+                  <span class="days mx-2 bx-1 w-auto">{timeLeft.days}</span>
                   <p>Days</p>
                 </li>
 
                 <li>
-                  <span class="hours">05</span>
+                  <span class="hours mx-2 bx-1  w-auto">{timeLeft.hours}</span>
                   <p>hours</p>
                 </li>
 
                 <li>
-                  <span class="minutes">57</span>
+                  <span class="minutes mx-2 bx-1  w-auto">{timeLeft.minutes}</span>
                   <p>minutes</p>
                 </li>
 
                 <li>
-                  <span class="seconds">00</span>
+                  <span class="seconds mx-2 bx-1  w-auto">{timeLeft.seconds}</span>
                   <p>seconds</p>
                 </li>
               </ul>

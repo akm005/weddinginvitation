@@ -5,6 +5,8 @@ const ConfettiEffect = () => {
   useEffect(() => {
     const scalar = 10;
     const marrygold = confetti.shapeFromText({ text: "🏵️", scalar });
+    const rleaf = confetti.shapeFromText({ text: "🍁", scalar });
+    const rose = confetti.shapeFromText({ text: "🌹", scalar });
     let timeout;
     let animationFrameId;
     let isConfettiRunning = false;
@@ -25,7 +27,7 @@ const ConfettiEffect = () => {
         angle: 60,
         spread: 30,
         origin: { x: 0 },
-        shapes: [marrygold],
+        shapes: [marrygold,rleaf,rose],
       });
 
       confetti({
@@ -33,7 +35,7 @@ const ConfettiEffect = () => {
         angle: 120,
         spread: 30,
         origin: { x: 1 },
-        shapes: [marrygold],
+        shapes: [marrygold,rleaf,rose],
       });
 
       if (isConfettiRunning) {

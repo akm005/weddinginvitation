@@ -35,7 +35,7 @@ export default function StepB() {
       // style="z-index: 0; background-image: none; background-attachment: scroll; background-size: auto;"
       style={{zIndex:0,backgroundAttachment:'scroll',backgroundSize:'auto'}}
     >
-      <div class="container">
+      <div className="container-fluid">
         <div class="row">
           <div class="col-md-6 col-sm-12">
             <div class="counter-con">

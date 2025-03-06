@@ -17,8 +17,8 @@
       property="og:description"
       content="Join us as we celebrate the union of Rahul & Nisha Save the date 20-Apr-2025."
     />
-    <meta property="og:image" content="https://rahulnishaweddinginvitation.web.app/assets/images/og.png"/>
-    <meta property="og:url" content=" https://rahulnishaweddinginvitation.web.app/" />
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=" " />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Rahul & Nisha Wedding" />
 
@@ -88,7 +88,18 @@
     <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
 
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
-
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let baseUrl = window.location.origin; 
+        let imagePath = "/assets/images/og.png"; 
+        document
+          .querySelector('meta[property="og:url"]')
+          .setAttribute("content", baseUrl + window.location.pathname);
+        document
+          .querySelector('meta[property="og:image"]')
+          .setAttribute("content", baseUrl + imagePath);
+      });
+    </script>
     <title>Rahul & Nisha Wedding Invitation</title>
   </head>
   <body>

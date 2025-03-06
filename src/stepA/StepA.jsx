@@ -95,8 +95,8 @@ export default function StepA() {
       className="about_area section section-bg"
       style={{ position: "relative", overflow: "hidden" }}
     >
-      <div className="container">
-        <div className="row p-4">
+      <div className="container-fluid">
+        <div className="row py-4 px-0 px-lg-5">
           {/* <div className="col-md-4 col-sm-12">
             <div className="persons">
               <figure>
@@ -109,15 +109,15 @@ export default function StepA() {
             </div>
           </div> */}
 
-          <div className=" invititation col-md-12 col-sm-12 align-self-center">
+          <div className=" invititation d-block d-lg-flex justify-content-center align-self-center  p-0 col-md-12 col-sm-12 align-self-center">
             <div
-              className="about-con"
+              className="about-con custom-shadow-lg d-block d-lg-flex justify-content-center align-self-center"
               style={{
                 backgroundImage: "url(./assets/bg3.jpg)",
                 position: "relative",
               }}
             >
-              <div className="invitation">
+              <div className="invitation  d-block d-lg-flex flex-column gap-row-2 justify-content-center align-self-center ">
                 <h2 className="heading moon-dance-regular">Wedding Invitation</h2>
 
                 <p className="subheading mb-xs-0 mb-sm-0">We inviting you and your family on</p>

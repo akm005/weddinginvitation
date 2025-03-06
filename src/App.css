@@ -188,6 +188,13 @@
 
 .invititation{
   z-index: 101;
+
+  height: 100%;
+  display: flex
+;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 1em;
 }
 
 .bx-1{
@@ -224,4 +231,16 @@
 
 .counter-container{
   text-shadow: 1px 1px 10px orange, 1px 1px 10em green, 1px 1px 1em red;
+}
+
+@media (min-width: 992px) { /* Large screens (lg) */
+  .custom-shadow-lg {
+    box-shadow: 2em 2em 2em brown;
+    width: 80%;
+    height: 30em;
+  }
+}
+
+.invitation{
+  row-gap: 1em;
 }

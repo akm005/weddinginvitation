@@ -4,11 +4,11 @@ export default function StepD() {
   return (
     <section
       section-scroll="5"
-      className="gallery-area section2 bg-img jarallax af"
+      className="gallery-area-new section2 bg-img jarallax af"
       data-jarallax-original-styles="null"
       // style="z-index: 0; background-image: none; background-attachment: scroll; background-size: auto;"
     >
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
           <div className="col-md-12 col-sm-12">
             <div className="section-heading">

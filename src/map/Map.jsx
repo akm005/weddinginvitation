@@ -4,7 +4,7 @@ function Map(props) {
   return (
     <section section-scroll="7" class="contact-area section section-bg">
 
-            <div class="container">
+            <div className="container-fluid">
 
                 <div class="row">
 

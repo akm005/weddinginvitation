@@ -6,7 +6,7 @@ export default function Events() {
   return (
     <section section-scroll="2" class="love-story section section-bg">
 
-            <div class="container">
+            <div className="container-fluid">
 
                 <div class="row">
 

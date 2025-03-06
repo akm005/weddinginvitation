@@ -233,14 +233,43 @@
   text-shadow: 1px 1px 10px orange, 1px 1px 10em green, 1px 1px 1em red;
 }
 
-@media (min-width: 992px) { /* Large screens (lg) */
+@media (min-width: 992px) { 
   .custom-shadow-lg {
     box-shadow: 2em 2em 2em brown;
     width: 80%;
     height: 30em;
+  }
+  .lefts {
+    padding-right: 2.5em !important;
+    & .storys {
+      margin-left: 10em;
+    }
+  }
+
+  .rights .storys{
+    & .storys {
+      margin-right: 10em;
+    }
   }
 }
 
 .invitation{
   row-gap: 1em;
 }
+
+@media (min-width: 768px) { 
+  .lefts {
+    padding-right: 2.5em !important;
+    & .storys {
+      margin-left: 2em;
+    }
+  }
+
+  .rights {
+    padding-left: 2.5em !important;
+    & .storys {
+      margin-right: 2em;
+    }
+  }
+}
+

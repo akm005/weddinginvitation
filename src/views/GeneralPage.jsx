@@ -9,13 +9,12 @@ import Map from "../map/Map";
 export default function General() {
   return (
     <>
-    <div>anup</div>
       <Headers />
       <StepA />
       <StepB />
       <Events />
-      <StepD />
       <Map />
+      <StepD />
       <StepE />
     </>
   );

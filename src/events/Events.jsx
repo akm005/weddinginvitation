@@ -30,14 +30,14 @@ export default function Events() {
 
                             <div class="story-list">
 
-                                <div class="col-sm-6 pd-0">
-                                    <div className='story lefts'><Story  data={eventData[0]}/></div>
-                                    <div className='story lefts'><Story  data={eventData[2]}/></div>
+                                <div class="row pb-0">
+                                    <div className='col-12 col-md-6 story lefts'><Story  data={eventData[0]}/></div>
+                                    <div className='col-12 col-md-6 story rights first'><Story  data={eventData[1]}/></div>
                                 </div>
 
-                                <div class="col-sm-6 pd-0">
-                                    <div class="story rights first"><Story  data={eventData[1]}/></div>
-                                    <div class="story rights"><Story  data={eventData[3]}/></div>
+                                <div class="row pt-0 mt-md-n3 neg-mar">
+                                    <div class="col-12 col-md-6 story lefts"><Story  data={eventData[2]}/></div>
+                                    <div class="col-12 col-md-6 story rights first"><Story  data={eventData[3]}/></div>
                                 </div>
 
                             </div>

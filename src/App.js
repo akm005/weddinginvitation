@@ -12,6 +12,9 @@ function App() {
           <Route path="/office" element={<Office />} />
         </Routes>
       </Router>
+      <div className="client">
+        <div className="moving-text">TeckZy<span style={{color:"red"}}>Labs</span></div>
+      </div>
     </div>
   );
 }

@@ -4,7 +4,7 @@ export default function StepB() {
 
   const calculateTimeLeft = () => {
     const now = new Date();
-    const endTime = new Date(2025, 3, 25, 19, 0, 0)
+    const endTime = new Date(2025, 3, 20, 19, 0, 0)
     const difference = endTime - now;
 
     let timeLeft = {};

@@ -3,9 +3,9 @@ import GoogleMapPreview from '../googleMap/GoogleMap'
 
 function Map(props) {
 
-    const destination = "26.7803425,82.9777321"; 
+    const destination = "26.780557837840927, 83.06101336057286"; 
     const handleClick = () => {
-        const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${destination}`;
+        const googleMapsUrl = `https://maps.app.goo.gl/Q6RdSMdbjpGwdGAn6`;
         window.open(googleMapsUrl, "_blank");
       };
     const handleCall = () => {
@@ -35,31 +35,33 @@ function Map(props) {
 
                         <div class="contact-info mx-lg-5 h-100 w-100">
 
-                            <div class="info-list" onClick={handleClick}>
+                            <div class="info-list d-flex justify-content-center  justify-content-md-around">
 
-                                <div class="info-ico"><img src="assets/images/icons/2.png" alt=""/></div>
+                                <div class="info-ico d-none d-md-block"><img src="assets/images/icons/2.png" alt=""/></div>
 
-                                <div class="info-content">
-
+                                <div class="info-content w-100 d-flex flex-row gap-3 flex-lg-column justify-content-between justify-content-sm-center align-items-center p-0">
+                                    <span className='flex-sm-grow-1 text-start text-lg-center'>
                                     <h2 >Location</h2>
-
+ 
                                     <p className='font-italic'>Milan Marriage Hall, Nedula Churaha Banjariya Road Khalilabad,<br/>Uttar Pradesh, India</p>
+                                    </span>
 
+                                    <button type='button' className='clickable d-inline-flex me-3 me-lg-0' onClick={handleClick}>🧭 <span className='d-sm-block d-none'>Navigate</span></button>
                                 </div>
-
                             </div>
 
 
-                            <div class="info-list" onClick={handleCall}>
+                            <div class="info-list d-flex justify-content-center  justify-content-md-around">
 
-                                <div class="info-ico"><img src="assets/images/icons/4.png" alt=""/></div>
+                                <div class="info-ico d-none d-md-block"><img src="assets/images/icons/4.png" alt=""/></div>
 
-                                <div class="info-content">
-
+                                <div class="info-content w-100 d-flex flex-row gap-3 flex-lg-column justify-content-between  justify-content-sm-center align-items-center p-0">
+                                    <span className='flex-sm-grow-1 text-start text-lg-center'>
                                     <h2>Phone</h2>
 
                                     <p className='font-italic'>+91 9936539050<br/> </p>
-
+                                    </span>
+                                    <button type='button' className='clickable d-inline-flex me-3 me-lg-0' onClick={handleCall}>📞<span className='d-sm-block d-none'>Call</span> </button>
                                 </div>
 
                             </div>

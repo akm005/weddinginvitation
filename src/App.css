@@ -16,7 +16,7 @@
 .client{
   color: white;
   background-color: black;
-  height: 3em;
+  height: 2em;
   width: 100vw;
   overflow: hidden;
   position: relative;
@@ -29,27 +29,29 @@
 
 .moving-text {
   position: absolute;
-  top: 0;
+  top: -0.5em;
   left: 0;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: bold;
   color: white;
   white-space: nowrap;
-  animation: movePattern 20s linear infinite;
-  width: 100%;
+  animation: movePattern 20s 0s linear infinite;
+  width: fit-content;
   height: 80%;
 }
 
 @keyframes movePattern {
-  0%   { left: -20%; top: 0%; opacity: 0;}  /* Start from left */
-  20%  { left: 50%; top: 0%; transform: translateX(-50%); opacity: 1;} /* Move to center */
-  30%  { left: 50%; top: 50%; transform: translateX(-50%); opacity: 1;} /* Move down */
-  45%  { left: -20%; top: 50%; opacity: 0;}  /* Exit to left */
+  0%   { left: -20%; top: 0;}  /* Start from left */
+  23%  { left: 50%; top: 0%; transform: translateX(-50%); opacity: 1;} /* Move to center */
+  30%  { left: 60%; top: 45%; transform: translateX(-50%); opacity: 1;} /* Move down */
+  40%  { top: 30%; transform: translateX(-50%); opacity: 1;} /* Move down */
+  49%  { left: -20%; top: -10%; opacity: 0;}  /* Exit to left */
   
-  50%  { left: 120%; top: 0%; opacity: 0;}  /* Reappear from right */
-  70% { left: 50%; top: 0%; transform: translateX(-50%); opacity: 1;} /* Move to center again */
-  80%  { left: 50%; top: 50%; transform: translateX(-50%); opacity: 1;} /* Move down */
-  100%  { left: 120%; top: 50%; opacity: 0;} 
+  51%  { left: 120%; top: 0%; opacity: 0;}  /* Reappear from right */
+  73% { left: 50%; top: 0%; transform: translateX(-50%); opacity: 1;} /* Move to center again */
+  80%  { left: 40%; top: 45%; transform: translateX(-50%); opacity: 1;} /* Move down */
+  90%  { top: 30%; transform: translateX(-50%); opacity: 1;} /* Move down */
+  100%  { left: 120%; top: -10%; opacity: 0;} 
 }
 
 .App-header {
@@ -113,7 +115,7 @@
   border-radius: 50%;
   background-color: red;
   width: 10em;
-  box-shadow: pink 0px 5px 3em;
+  box-shadow: red 0px 0px 9em;
   margin: 1em;
 
   img {
@@ -335,11 +337,36 @@
 
 .info-list {
   padding: 0.5em;
-  box-shadow: 10px 10px 13px 0px red,  5px 5px 9px 0px lightcoral;
+  box-shadow: 10px 10px 13px 0px lightslategray,  5px 5px 9px 0px slategray;
   border-radius: 1em;
-  aspect-ratio: 1/0.25;
   & .info-ico{
     background: transparent !important;
     border: none !important;
   }
+  &:hover,&:active,&:focus{
+    box-shadow: 10px 10px 13px 0px red,  5px 5px 9px 0px lightcoral;
+  }
+}
+
+iframe:hover,iframe:focus,iframe:active{
+  border-color: gray !important;
+}
+
+.clickable {
+  padding: 0.5em 1em;
+  border-radius: 2em;
+  color: white;
+  background-color: slategray;
+  border: 2px solid white;
+  font-size: larger;
+  font-weight: 600;
+  font-family: ui-monospace;
+  font-style: italic;
+  cursor: pointer;
+  width: fit-content;
+  &:hover{
+    color: red;
+    scale: 1.1;
+  }
+  gap: 1em;
 }

@@ -14,7 +14,7 @@ export default function General() {
       <StepB />
       <Events />
       <Map />
-      <StepD />
+      {/* <StepD /> */}
       <StepE />
     </>
   );

@@ -10,7 +10,7 @@ function Story({data}) {
       <div class="content">
         <h3>{data.heading}</h3>
         <h4 className="font-oblique">{data.subheading}</h4>
-        <p className="font-italic">
+        <p className="">
           {data.desc}
         </p>
       </div>

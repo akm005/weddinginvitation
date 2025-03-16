@@ -1,7 +1,33 @@
 .App {
   text-align: center;
 }
+@font-face {
+  font-family: 'carried';
+  src: url('./../public/assets/fonts/carried.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'honeymoon';
+  src: url('./../public/assets/fonts/honeymoon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'stylish';
+  src: url('./../public/assets/fonts/stylish.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
+.App{
+  font-family: 'stylish';
+}
+
+header{
+  background-color: #f33c3c !important;
+  opacity: 0.78 !important;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -13,6 +39,7 @@
   }
 }
 
+
 .client{
   color: white;
   background-color: black;
@@ -21,9 +48,8 @@
   overflow: hidden;
   position: relative;
   padding: 0px;
-  position: fixed;
   bottom: 0;
-  z-index: 500;
+  z-index: 1000;
   margin-bottom: -2px;
 }
 
@@ -35,7 +61,7 @@
   font-weight: bold;
   color: white;
   white-space: nowrap;
-  animation: movePattern 20s 0s linear infinite;
+  animation: movePattern 120s 0s linear infinite;
   width: fit-content;
   height: 80%;
 }
@@ -45,7 +71,7 @@
   23%  { left: 50%; top: 0%; transform: translateX(-50%); opacity: 1;} /* Move to center */
   30%  { left: 60%; top: 45%; transform: translateX(-50%); opacity: 1;} /* Move down */
   40%  { top: 30%; transform: translateX(-50%); opacity: 1;} /* Move down */
-  49%  { left: -20%; top: -10%; opacity: 0;}  /* Exit to left */
+  50%  { left: -20%; top: -10%; opacity: 0;}  /* Exit to left */
   
   51%  { left: 120%; top: 0%; opacity: 0;}  /* Reappear from right */
   73% { left: 50%; top: 0%; transform: translateX(-50%); opacity: 1;} /* Move to center again */
@@ -100,6 +126,7 @@
 .slot {
   position: absolute;
   background-color: red;
+  opacity: 0.78 !important;
   width: 30em;
   height: 20em;
   /* clip-path: polygon(10% 100%, 50% 30%, 90% 100%); */
@@ -114,8 +141,9 @@
 .image-avatar {
   border-radius: 50%;
   background-color: red;
+  opacity: 0.78 !important;
   width: 10em;
-  box-shadow: red 0px 0px 9em;
+  box-shadow: red 0px 0px 2em;
   margin: 1em;
 
   img {
@@ -151,17 +179,34 @@
   h4 {
     color: white !important;
   }
+
+  & h3,h4{
+    font-family: 'stylish';
+  }
   & p {
     font-size: larger;
   }
   & .subheading {
-    font-style: oblique;
+    /* font-style: oblique; */
+    font-family: 'honeymoon';
+    font-size:36px;
   }
 
   & .address {
     font-style: italic;
   }
 }
+
+.about_area .persons{
+    & h2{
+      font-family: 'stylish' !important;
+    }
+    & p{
+      font-family: 'honeymoon';
+      font-size: 24px;
+    }
+  }
+
 .gng-container {
   position: absolute;
   display: flex;
@@ -205,8 +250,9 @@
 }
 
 .celebration-img {
-  height: 20em;
+  aspect-ratio: 16/9; 
   margin-bottom: 0em;
+  border-radius: 30px 30px 0em 0em;
 
   & img {
     width: 100%;
@@ -266,6 +312,18 @@
 
 .counter-con {
   text-shadow: 11px 9px 10px red;
+  h2,p {
+    font-family: 'honeymoon' !important;
+  }
+}
+
+.image-bg{
+  height: 100%;
+  width: 100%;
+  filter: blur(2px);
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
 }
 
 .counter-container {
@@ -275,19 +333,29 @@
 .invitation {
   row-gap: 1em;
 }
-
+.storys{
+  padding: 0.8em;
+  & .content{
+    h4{
+      font-size: xx-large !important;
+    }
+    p{
+      font-size: 24px !important;
+    }
+  }
+}
 @media (min-width: 768px) {
   .lefts {
     padding-right: 2.5em !important;
     & .storys {
-      margin-left: 2em;
+      margin-left: 0em;
     }
   }
 
   .rights {
     padding-left: 2.5em !important;
     & .storys {
-      margin-right: 2em;
+      margin-right: 0em;
     }
   }
 
@@ -303,20 +371,21 @@
 
 @media (min-width: 992px) {
   .custom-shadow-lg {
-    box-shadow: 2em 2em 2em brown;
+    box-shadow: 0.5em 0.5em 1em brown;
     width: 80%;
     height: 30em;
   }
   .lefts {
-    padding-right: 2.5em !important;
+    padding-right: 5em !important;
     & .storys {
-      margin-left: 10em;
+      margin-left: 15em;
     }
   }
 
-  .rights .storys {
+  .rights {
+    padding-left: 5em !important;
     & .storys {
-      margin-right: 10em;
+      margin-right: 15em;
     }
   }
 
@@ -330,6 +399,11 @@
   }
 }
 
+.storys p{
+  font-family: 'honeymoon';
+  font-size: 24px;
+}
+
 .map-container {
   width: 100%;
   aspect-ratio: 16/9;
@@ -337,14 +411,15 @@
 
 .info-list {
   padding: 0.5em;
-  box-shadow: 10px 10px 13px 0px lightslategray,  5px 5px 9px 0px slategray;
+  box-shadow: 1px 1px 6px 0px lightslategray,  1px 1px 4px 0px slategray;
   border-radius: 1em;
   & .info-ico{
     background: transparent !important;
     border: none !important;
   }
   &:hover,&:active,&:focus{
-    box-shadow: 10px 10px 13px 0px red,  5px 5px 9px 0px lightcoral;
+    box-shadow: 1px 1px 6px 0px red,  1px 1px 4px 0px lightcoral;
+
   }
 }
 
@@ -356,7 +431,8 @@ iframe:hover,iframe:focus,iframe:active{
   padding: 0.5em 1em;
   border-radius: 2em;
   color: white;
-  background-color: slategray;
+  background-color: red;
+  opacity: 0.78 !important;
   border: 2px solid white;
   font-size: larger;
   font-weight: 600;
@@ -366,7 +442,9 @@ iframe:hover,iframe:focus,iframe:active{
   width: fit-content;
   &:hover{
     color: red;
-    scale: 1.1;
+    background-color: white;
+    border: 2px solid red;
+    scale: 1.01;
   }
   gap: 1em;
 }

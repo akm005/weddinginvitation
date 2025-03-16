@@ -30,11 +30,12 @@ export default function StepB() {
   }, []);
   return (
     <section
-      class="counter-area section bg-img jarallax"
+      class="counter-area position-relative section bg-img jarallax"
       data-jarallax-original-styles="null"
       // style="z-index: 0; background-image: none; background-attachment: scroll; background-size: auto;"
-      style={{zIndex:0,backgroundAttachment:'scroll',backgroundSize:'auto'}}
+     
     >
+      <div className="image-bg position-absolute top-0 left-0"  style={{zIndex:0,backgroundAttachment:'scroll',backgroundSize:'auto'}}></div>
       <div className="container-fluid">
         <div class="row">
           <div class="col-md-6 col-sm-12">

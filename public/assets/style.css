@@ -2148,7 +2148,9 @@ header .main-menus nav ul li a:hover {
 .counter-area {
   position: relative;
   display: block;
-  background: url(images/banner/banner.jpeg);
+  & .image-bg{
+    background: url(images/banner/banner.jpeg);
+  }
 }
 .counter-area .counter-con {
   display: block;
@@ -2354,7 +2356,7 @@ header .main-menus nav ul li a:hover {
   }
 }
 .love-story .love-story .story-list .story.lefts:after {
-  content: '\f004';
+  content: '\1F49E' !important;
   font-family: fontawesome;
   color: #f33c3c;
   font-size: 18px;
@@ -2392,7 +2394,7 @@ header .main-menus nav ul li a:hover {
   }
 }
 .love-story .love-story .story-list .story.rights:after {
-  content: '\f004';
+  content: '\1F49E' !important;
   font-family: fontawesome;
   color: #f33c3c;
   font-size: 18px;
@@ -2521,7 +2523,7 @@ header .main-menus nav ul li a:hover {
   color: #797979;
 }
 .love-story .love-story .story-list .story .storys:hover figure img {
-  filter: blur(8px);
+  /* filter: blur(8px); */
 }
 .love-story .love-story .story-list .story:hover:after {
   border: 7px solid #f33c3c;

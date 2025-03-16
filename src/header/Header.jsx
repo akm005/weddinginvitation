@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Header() {
   return (
-    <header id="sticky" class="sticky">
+    <header id="sticky" class="">
 
             <div class="container-fluid">
 

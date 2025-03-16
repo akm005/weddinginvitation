@@ -22,11 +22,15 @@
 
 .App{
   font-family: 'stylish';
+  overflow-y: hidden;
 }
 
 header{
   background-color: #f33c3c !important;
   opacity: 0.78 !important;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  height: 100px;
+  line-height: 100px;
 }
 .App-logo {
   height: 40vmin;
@@ -275,7 +279,7 @@ header{
 
 .invititation {
   z-index: 101;
-
+  top:-6em;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -373,19 +377,19 @@ header{
   .custom-shadow-lg {
     box-shadow: 0.5em 0.5em 1em brown;
     width: 80%;
-    height: 30em;
+    height: 40em;
   }
   .lefts {
     padding-right: 5em !important;
     & .storys {
-      margin-left: 15em;
+      margin-left: 10em;
     }
   }
 
   .rights {
     padding-left: 5em !important;
     & .storys {
-      margin-right: 15em;
+      margin-right: 10em;
     }
   }
 

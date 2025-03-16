@@ -97,7 +97,7 @@ export default function StepA() {
     <div className="container-fluid">
       <div className="row py-4 px-0 px-lg-5">
 
-        <div className=" invititation d-block d-lg-flex justify-content-center align-self-center  p-0 col-md-12 col-sm-12 align-self-center">
+        <div className=" invititation d-block d-lg-flex justify-content-start align-self-center  p-0 col-md-12 col-sm-12 align-self-center">
           <div
             className="about-con custom-shadow-lg d-block d-lg-flex justify-content-center align-self-center"
             style={{
